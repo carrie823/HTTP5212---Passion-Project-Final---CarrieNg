@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Artwork</h2>
+<form action="/Artwork/Create" method="POST">
+    <div>
+        <label>Artwork Title:</label> <input type="text" name="ArtworkName" />
+    </div>
+    <div>
+        <label>Artist ID:</label> <input type="number" name="ArtistId" />
+    </div>
+    <div>
+        <label>Artwork Description:</label> <input type="text" name="ArtworkDescription" />
+    </div>
+    <div>
+        <label>Artwork File Name:</label> <input type="text" name="ArtworkImage" />
+    </div>
+    <div>
+        <input type="submit" value="Add Artwork"/>
+    </div>
+</form>
+

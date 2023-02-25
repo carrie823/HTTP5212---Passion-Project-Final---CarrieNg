@@ -1,0 +1,15 @@
+﻿@model IEnumerable<HTTP5212_Passion_Project3.Models.CommentDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Comments</h2>
+@foreach (var comment in Model)
+{
+    <h3><a href="/Comment/Details/@comment.CommentId">@comment.CommentText</a></h3>
+    <h4>Commented on Artwork ID: @comment.ArtworkName</h4>
+
+
+
+}
+

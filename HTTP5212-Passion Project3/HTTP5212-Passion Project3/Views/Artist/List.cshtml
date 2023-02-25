@@ -1,0 +1,13 @@
+﻿@model IEnumerable<HTTP5212_Passion_Project3.Models.ArtistDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Artists</h2>
+@foreach(var artist in Model)
+ {
+    <h3><a href="/Artist/Details/@artist.ArtistId">@artist.FirstName @artist.LastName</a></h3>
+    <h4>Artist ID: @artist.ArtistId</h4>
+
+
+ }
