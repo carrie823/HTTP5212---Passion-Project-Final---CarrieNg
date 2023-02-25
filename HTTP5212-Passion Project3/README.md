@@ -27,6 +27,6 @@ There are 3 databases in this application, which are the Artist table, Artwork t
 - Update an artist on Command Line: curl -d @Artist.json -H "Content-type:application/json" localhost/api/CommentData/UpdateComment/{id}
 
 ## Upcoming Features
-Full CRUD capabilities running on the Views (including Update and Delete)
-Ability to upload images and display them on web page. 
+- Full CRUD capabilities running on the Views (including Update and Delete)
+- Ability to upload images and display them on web page. 
 
