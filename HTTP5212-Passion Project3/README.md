@@ -2,7 +2,7 @@
 This is a content management system for a web app for artist to showcase their artwork online. This web application used code-first migration to create databases, and can preform CRUD features. Please note, that the not all the features are complete. 
 
 ## Database 
-There are 3 databases in this application, which are the Artist table, Artwork table, and Comments table. The Artist table has 3 columns (ArtistId, FirstName, LastName). The Artwork table has 5 columns (ArtworkId, ArtworkName, ArtworkDescription, ArtistId (Foreign Key), and ArtworkImage). The comment table has 3 columns (CommentId, CommentText, ArtworkId). 
+There are 3 databases in this application, which are the Artist table, Artwork table, and Comments table. The Artist table has 3 columns (ArtistId, FirstName, LastName). The Artwork table has 5 columns (ArtworkId, ArtworkName, ArtworkDescription, ArtistId (Foreign Key), and ArtworkImage). The comment table has 3 columns (CommentId, CommentText, ArtworkId (Foreign Key)). 
 
 ## Using the Database and Application
 ### Getting data from the API:
@@ -23,8 +23,8 @@ There are 3 databases in this application, which are the Artist table, Artwork t
 ### Delete a comment in Command Line: 
 - curl -d "" https://localhost:44307/api/artistdata/deletecomment/{id}
 - Update an artist on Command Line: curl -d @Artist.json -H "Content-type:application/json" localhost/api/ArtistData/UpdateArtist/{id}
-- Update an artwork on Command Line: curl -d @Artist.json -H "Content-type:application/json" localhost/api/ArtworkData/UpdateArtwork/{id}
-- Update an artist on Command Line: curl -d @Artist.json -H "Content-type:application/json" localhost/api/CommentData/UpdateComment/{id}
+- Update an artwork on Command Line: curl -d @Artwork.json -H "Content-type:application/json" localhost/api/ArtworkData/UpdateArtwork/{id}
+- Update an comment on Command Line: curl -d @Comment.json -H "Content-type:application/json" localhost/api/CommentData/UpdateComment/{id}
 
 ## Upcoming Features
 - Full CRUD capabilities running on the Views (including Update and Delete)
